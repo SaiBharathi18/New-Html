@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/528498.png" type="image/x-icon">
+</head>
+<body>
+  
+    <div class="button">
+        <div>
+            <p class="para">Global Variable:
+
+                isDarkMode: A boolean to keep track of whether the dark mode is active.
+                <ol><li>Function change2():
+                
+                <ul><li>Purpose: Randomly changes the background color of the body.</li>
+                <li>It defines an array of color codes.</li>
+                <li>It selects a random color from the array using Math.random() and sets the body's backgroundColor property to that color.</li></ul>
+                <li>Function changeMode():
+                
+                <ul><li>Purpose: Toggles between light and dark modes.</li>
+                <li>It toggles the isDarkMode variable to switch states.</li>
+                <li>Based on the value of isDarkMode, it sets the body's background and text color:
+                <ul><li>Dark mode: dark background with light text.</li>
+                <li>Light mode: light background with dark text.</li></ol></p>
+            <p class="para">Hello World</p>
+        </div>
+        <button id="btn" onclick="change2()">Click</button>
+        <button onclick="changeMode()">change</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
